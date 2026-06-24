@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+<meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+    <meta name="theme-color" content="#0b325c">
+    <meta
+      name="description"
+      content="UniCarona: caronas universitárias simples, colaborativas e seguras."
+    >
+
+    <title>UniCarona</title>
+    <link rel="icon" type="image/png" href="/assets/logo-icon.png">
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    
+    <section id="telaAbertura" class="tela-abertura" aria-label="Carregando UniCarona">
+      <div class="tela-abertura__grade"></div>
+
+      <span class="particula particula--1"></span>
+      <span class="particula particula--2"></span>
+      <span class="particula particula--3"></span>
+      <span class="particula particula--4"></span>
+
+      <div class="tela-abertura__conteudo">
+        <div class="marca-animada">
+          <span class="marca-animada__anel"></span>
+          <span class="marca-animada__anel marca-animada__anel--externo"></span>
+
+          <div class="simbolo-marca simbolo-marca--grande"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+        </div>
+
+        <p class="rotulo rotulo--claro">MOBILIDADE UNIVERSITÁRIA</p>
+        <h1>Uni<span>Carona</span></h1>
+        <p>Conectando caminhos, aproximando pessoas.</p>
+
+        <div class="barra-carregamento" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="telaLogin" class="tela-login">
+      <aside class="painel-apresentacao">
+        <header class="painel-apresentacao__cabecalho">
+          <div class="marca marca--clara">
+            <div class="simbolo-marca"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+            <strong>Uni<span>Carona</span></strong>
+          </div>
+
+          <span class="selo-prototipo">PROTÓTIPO ACADÊMICO</span>
+        </header>
+
+        <div class="painel-apresentacao__cena" aria-hidden="true">
+          <div class="trilha trilha--1"></div>
+          <div class="trilha trilha--2"></div>
+
+          <article class="cartao-local cartao-local--origem">
+            <span class="marcador-local marcador-local--azul"></span>
+            <div>
+              <strong>Asa Norte</strong>
+              <small>Origem</small>
+            </div>
+          </article>
+
+          <article class="cartao-local cartao-local--destino">
+            <span class="marcador-local marcador-local--verde"></span>
+            <div>
+              <strong>Campus</strong>
+              <small>Destino</small>
+            </div>
+          </article>
+
+          <div class="carro-ilustracao">
+            <div class="carro-ilustracao__vidro"></div>
+            <div class="carro-ilustracao__corpo"></div>
+            <div class="carro-ilustracao__roda carro-ilustracao__roda--esquerda"></div>
+            <div class="carro-ilustracao__roda carro-ilustracao__roda--direita"></div>
+          </div>
+
+          <article class="cartao-flutuante cartao-flutuante--confirmacao">
+            <span class="cartao-flutuante__icone">✓</span>
+            <div>
+              <strong>Carona confirmada</strong>
+              <small>Seu trajeto está combinado.</small>
+            </div>
+          </article>
+
+          <article class="cartao-flutuante cartao-flutuante--comunidade">
+            <div class="pilha-avatares">
+              <span class="avatar avatar--laranja">LM</span>
+              <span class="avatar avatar--roxo">CS</span>
+              <span class="avatar avatar--claro">+8</span>
+            </div>
+
+            <div>
+              <strong>Uma comunidade em movimento</strong>
+              <small>Estudantes conectados todos os dias.</small>
+            </div>
+          </article>
+        </div>
+
+        <div class="painel-apresentacao__texto">
+          <p class="rotulo rotulo--claro">CHEGAR JUNTO É MELHOR</p>
+          <h2>Caronas mais simples.<br><span>Universidade mais próxima.</span></h2>
+          <p>
+            Encontre pessoas que percorrem o mesmo caminho, divida trajetos
+            e transforme sua rotina acadêmica.
+          </p>
+
+          <div class="provas-sociais">
+            <span><strong>+1.200</strong> estudantes</span>
+            <i></i>
+            <span><strong>4,9</strong> avaliação média</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="painel-login">
+        <div class="cartao-login">
+          <div class="marca marca--mobile">
+            <div class="simbolo-marca"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+            <strong>Uni<span>Carona</span></strong>
+          </div>
+
+          <header class="cabecalho-login">
+            <p class="rotulo">BEM-VINDO(A)</p>
+            <h1>Entre para seguir seu caminho.</h1>
+            <p>Use seu e-mail acadêmico para acessar a plataforma.</p>
+          </header>
+
+          <form id="formularioLogin" novalidate>
+            <label class="campo">
+              <span>E-mail acadêmico</span>
+
+              <div class="campo__controle">
+                <span class="campo__icone">@</span>
+                <input
+                  id="entradaEmail"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="seu.nome@universidade.edu.br"
+                >
+              </div>
+            </label>
+
+            <label class="campo">
+              <span>Senha</span>
+
+              <div class="campo__controle">
+                <span class="campo__icone">•</span>
+                <input
+                  id="entradaSenha"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Sua senha"
+                >
+                <button
+                  id="botaoAlternarSenha"
+                  class="botao-icone"
+                  type="button"
+                  aria-label="Mostrar senha"
+                  title="Mostrar senha"
+                >
+                  ◉
+                </button>
+              </div>
+            </label>
+
+            <div class="opcoes-login">
+              <label class="caixa-selecao">
+                <input type="checkbox">
+                <span class="caixa-selecao__visual"></span>
+                Lembrar de mim
+              </label>
+
+              <button class="botao-texto" type="button" data-acao="recuperar-senha">
+                Esqueci minha senha
+              </button>
+            </div>
+
+            <button class="botao botao--primario botao--largo" type="submit">
+              Entrar na plataforma
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+
+          <div class="divisor"><span>ou</span></div>
+
+          <button
+            id="botaoDemonstracao"
+            class="botao botao--secundario botao--largo"
+            type="button"
+          >
+            <span class="indicador-pulso"></span>
+            Explorar demonstração
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <button
+            id="botaoApresentacao"
+            class="botao-apresentacao"
+            type="button"
+          >
+            <span class="botao-apresentacao__icone">▶</span>
+
+            <span class="botao-apresentacao__texto">
+              <strong>Apresentar o UniCarona</strong>
+              <small>Experiência guiada para sua banca</small>
+            </span>
+
+            <span class="botao-apresentacao__brilho"></span>
+          </button>
+
+          <p class="rodape-login">
+            Ainda não tem conta?
+            <button class="botao-texto" type="button" data-acao="criar-cadastro">
+              Criar cadastro
+            </button>
+          </p>
+        </div>
+      </main>
+    </section>
+
+    
+    <section id="aplicacao" class="aplicacao" aria-hidden="true">
+      <aside id="barraLateral" class="barra-lateral">
+        <div class="marca barra-lateral__marca">
+          <div class="simbolo-marca"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+          <strong>Uni<span>Carona</span></strong>
+        </div>
+
+        <nav class="menu-principal" aria-label="Menu principal">
+          <button class="item-menu item-menu--ativo" type="button" data-pagina="inicio">
+            <span class="item-menu__icone">⌂</span>
+            <span>Início</span>
+          </button>
+
+          <button class="item-menu" type="button" data-pagina="explorar">
+            <span class="item-menu__icone">⌕</span>
+            <span>Encontrar carona</span>
+            <b id="contadorMenuCaronas">8</b>
+          </button>
+
+          <button class="item-menu" type="button" data-pagina="publicar">
+            <span class="item-menu__icone">+</span>
+            <span>Oferecer carona</span>
+          </button>
+
+          <button class="item-menu" type="button" data-pagina="minhas-caronas">
+            <span class="item-menu__icone">◷</span>
+            <span>Minhas caronas</span>
+          </button>
+
+          <button class="item-menu" type="button" data-pagina="amigos">
+            <span class="item-menu__icone">◎</span>
+            <span>Amigos e rede</span>
+            <b id="contadorAmigos">3</b>
+          </button>
+        </nav>
+
+        <div class="barra-lateral__rodape">
+          <button class="item-menu" type="button" data-pagina="perfil">
+            <span class="item-menu__icone">◉</span>
+            <span>Meu perfil</span>
+          </button>
+
+          <div class="usuario-resumo">
+            <span class="avatar avatar--azul">DV</span>
+
+            <div>
+              <strong>Davi Vidal</strong>
+              <small>Passageiro e motorista</small>
+            </div>
+
+            <button
+              class="botao-icone botao-icone--sair"
+              type="button"
+              data-acao="sair"
+              aria-label="Sair da demonstração"
+              title="Sair"
+            >
+              ↪
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="area-principal">
+        <header class="barra-superior">
+          <button
+            id="botaoMenuMobile"
+            class="botao-icone botao-menu-mobile"
+            type="button"
+            aria-label="Abrir menu"
+          >
+            ☰
+          </button>
+
+          <div class="barra-superior__titulo">
+            <strong id="tituloNavegacao">Visão geral</strong>
+            <span class="sinal-disponibilidade"><i></i>Disponível agora</span>
+          </div>
+
+          <div class="barra-superior__acoes">
+            <button
+              class="botao-icone botao-notificacoes"
+              type="button"
+              data-acao="abrir-notificacoes"
+              aria-label="Abrir notificações"
+              title="Notificações"
+            >
+              ♡
+              <i></i>
+            </button>
+
+            <button class="botao-avatar" type="button" data-pagina="perfil" aria-label="Abrir perfil">
+              <span class="avatar avatar--azul">DV</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="conteudo-principal">
+          
+          <section id="paginaInicio" class="pagina pagina--ativa" data-identificador-pagina="inicio">
+            <section class="hero-inicio">
+              <div class="hero-inicio__conteudo">
+                <p class="rotulo">QUARTA-FEIRA, 24 DE JUNHO</p>
+                <h1>Bom dia, Davi.<br><span>Para onde vamos hoje?</span></h1>
+                <p>Descubra pessoas que percorrem o mesmo caminho que você.</p>
+
+                <div class="grupo-botoes">
+                  <button class="botao botao--primario" type="button" data-pagina="explorar">
+                    Encontrar uma carona <span aria-hidden="true">→</span>
+                  </button>
+
+                  <button class="botao botao--suave" type="button" data-pagina="publicar">
+                    <span aria-hidden="true">+</span> Oferecer carona
+                  </button>
+                </div>
+              </div>
+
+              <div class="hero-inicio__arte" aria-hidden="true">
+                <div class="estrada estrada--1"></div>
+                <div class="estrada estrada--2"></div>
+                <span class="pin-hero pin-hero--origem"></span>
+                <span class="pin-hero pin-hero--destino"></span>
+                <div class="carro-hero">🚙</div>
+
+                <article class="estatistica-flutuante">
+                  <span>↗</span>
+                  <div>
+                    <strong>12 min</strong>
+                    <small>até seu campus</small>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <div class="grade-resumo">
+              <section class="cartao cartao-proxima-carona">
+                <header class="cabecalho-cartao">
+                  <div>
+                    <p class="rotulo">SUA PRÓXIMA CARONA</p>
+                    <h2>Hoje, às 18:15</h2>
+                  </div>
+
+                  <span class="etiqueta etiqueta--confirmada">Confirmada</span>
+                </header>
+
+                <div class="rota-detalhada">
+                  <div class="rota-detalhada__pontos">
+                    <i class="ponto-rota ponto-rota--origem"></i>
+                    <b></b>
+                    <i class="ponto-rota ponto-rota--destino"></i>
+                  </div>
+
+                  <div class="rota-detalhada__enderecos">
+                    <div>
+                      <small>PARTIDA</small>
+                      <strong>Asa Norte, SQN 210</strong>
+                    </div>
+
+                    <div>
+                      <small>DESTINO</small>
+                      <strong>Campus Universitário</strong>
+                    </div>
+                  </div>
+
+                  <div class="rota-detalhada__horario">
+                    <strong>18:15</strong>
+                    <small>Previsão</small>
+                  </div>
+                </div>
+
+                <footer class="rodape-proxima-carona">
+                  <div class="pessoa-resumida">
+                    <span class="avatar avatar--laranja">LM</span>
+                    <div>
+                      <strong>Lucas Mendes</strong>
+                      <small><b>★</b> 4,9 · Motorista</small>
+                    </div>
+                  </div>
+
+                  <button
+                    class="botao botao--contorno"
+                    type="button"
+                    data-acao="ver-detalhes"
+                    data-id-carona="c1"
+                  >
+                    Ver detalhes
+                  </button>
+                </footer>
+              </section>
+
+              <aside class="cartao-impacto">
+                <span class="cartao-impacto__icone">♻</span>
+                <p>COMUNIDADE EM MOVIMENTO</p>
+                <strong>Você já economizou</strong>
+                <h2>R$ 84,00</h2>
+                <small>em trajetos compartilhados</small>
+                <div class="progresso-impacto"><span></span></div>
+                <em>Equivale a aproximadamente 16 kg de CO₂ evitados.</em>
+              </aside>
+            </div>
+
+            <section class="faixa-social-inicio" aria-label="Atividade da sua rede">
+              <div class="faixa-social-inicio__conteudo">
+                <div>
+                  <p class="rotulo">SUA REDE ESTÁ EM MOVIMENTO</p>
+                  <h2>Você não precisa ir sozinho.</h2>
+                  <p>
+                    Três amigos percorrem rotas parecidas hoje. Convide alguém,
+                    acompanhe atividades e combine o caminho.
+                  </p>
+                </div>
+
+                <div class="faixa-social-inicio__acoes">
+                  <div class="grupo-avatares-rede" aria-label="Amigos disponíveis">
+                    <span class="avatar avatar--laranja">LM</span>
+                    <span class="avatar avatar--roxo">CS</span>
+                    <span class="avatar avatar--verde">RB</span>
+                    <span class="grupo-avatares-rede__mais">+5</span>
+                  </div>
+
+                  <button
+                    class="botao botao--suave"
+                    type="button"
+                    data-pagina="amigos"
+                  >
+                    Ver minha rede
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section class="secao">
+              <header class="cabecalho-secao">
+                <div>
+                  <p class="rotulo">ENCONTRE SEU CAMINHO</p>
+                  <h2>Caronas para você</h2>
+                </div>
+
+                <button class="botao-texto" type="button" data-pagina="explorar">
+                  Ver todas <span>→</span>
+                </button>
+              </header>
+
+              <div id="listaCaronasInicio" class="grade-caronas"></div>
+            </section>
+          </section>
+
+          
+          <section id="paginaExplorar" class="pagina" data-identificador-pagina="explorar">
+            <header class="cabecalho-pagina">
+              <div>
+                <p class="rotulo">ENCONTRE A MELHOR ROTA</p>
+                <h1>Caronas disponíveis</h1>
+                <p>Escolha uma carona que acompanhe seu trajeto e sua rotina.</p>
+              </div>
+
+              <button class="botao botao--primario botao--compacto" type="button" data-pagina="publicar">
+                <span aria-hidden="true">+</span> Oferecer carona
+              </button>
+            </header>
+
+            <section class="painel-busca">
+              <label class="painel-busca__campo">
+                <span>⌖</span>
+                <input
+                  id="entradaBusca"
+                  type="search"
+                  placeholder="Busque por origem, destino ou motorista"
+                  autocomplete="off"
+                >
+              </label>
+
+              <button id="botaoFiltros" class="botao-filtros" type="button">
+                <span>☷</span>
+                Filtros
+                <b id="contadorFiltros">0</b>
+              </button>
+            </section>
+
+            <section id="painelFiltros" class="painel-filtros">
+              <div class="grupo-filtro">
+                <strong>Período</strong>
+
+                <div class="grupo-filtro__opcoes">
+                  <button class="chip-filtro chip-filtro--ativo" type="button" data-filtro-periodo="todos">Todos</button>
+                  <button class="chip-filtro" type="button" data-filtro-periodo="manha">Manhã</button>
+                  <button class="chip-filtro" type="button" data-filtro-periodo="tarde">Tarde</button>
+                  <button class="chip-filtro" type="button" data-filtro-periodo="noite">Noite</button>
+                </div>
+              </div>
+
+              <div class="grupo-filtro">
+                <strong>Preferências</strong>
+
+                <div class="grupo-filtro__opcoes">
+                  <button class="chip-filtro" type="button" data-filtro-preferencia="confirmacao-imediata">Confirmação imediata</button>
+                  <button class="chip-filtro" type="button" data-filtro-preferencia="aceita-bagagem">Aceita bagagem</button>
+                  <button class="chip-filtro" type="button" data-filtro-preferencia="apenas-mulheres">Apenas mulheres</button>
+                </div>
+              </div>
+            </section>
+
+            <div class="linha-resultados">
+              <p><strong id="quantidadeResultados">8</strong> caronas encontradas</p>
+
+              <button id="botaoOrdenar" class="botao-ordenar" type="button">
+                Ordenar por <b>horário</b> <span>⌄</span>
+              </button>
+            </div>
+
+            <div id="listaCaronasExplorar" class="lista-caronas"></div>
+          </section>
+
+          
+          <section id="paginaPublicar" class="pagina" data-identificador-pagina="publicar">
+            <header class="cabecalho-pagina">
+              <div>
+                <p class="rotulo">COMPARTILHE SEU CAMINHO</p>
+                <h1>Oferecer uma carona</h1>
+                <p>Preencha os detalhes e encontre colegas que fazem o mesmo trajeto.</p>
+              </div>
+            </header>
+
+            <div class="layout-publicacao">
+              <form id="formularioPublicacao" class="cartao-publicacao">
+                <header class="cabecalho-etapa">
+                  <span>1</span>
+                  <div>
+                    <h2>Seu trajeto</h2>
+                    <p>Conte para onde você vai.</p>
+                  </div>
+                </header>
+
+                <div class="campos-localizacao">
+                  <label class="campo campo--localizacao">
+                    <span>Local de partida</span>
+                    <i class="marcador-campo marcador-campo--origem"></i>
+                    <input id="entradaOrigem" type="text" required placeholder="Ex.: Águas Claras, DF">
+                  </label>
+
+                  <label class="campo campo--localizacao">
+                    <span>Destino</span>
+                    <i class="marcador-campo marcador-campo--destino"></i>
+                    <input id="entradaDestino" type="text" required placeholder="Ex.: Campus Universitário">
+                  </label>
+                </div>
+
+                <div class="linha-campos">
+                  <label class="campo">
+                    <span>Data</span>
+                    <input id="entradaData" type="date" required>
+                  </label>
+
+                  <label class="campo">
+                    <span>Horário de saída</span>
+                    <input id="entradaHorario" type="time" required>
+                  </label>
+                </div>
+
+                <header class="cabecalho-etapa cabecalho-etapa--secundaria">
+                  <span>2</span>
+                  <div>
+                    <h2>Detalhes da carona</h2>
+                    <p>Algumas informações para seus passageiros.</p>
+                  </div>
+                </header>
+
+                <div class="linha-campos">
+                  <label class="campo">
+                    <span>Vagas disponíveis</span>
+                    <select id="entradaVagas">
+                      <option value="1">1 vaga</option>
+                      <option value="2" selected>2 vagas</option>
+                      <option value="3">3 vagas</option>
+                      <option value="4">4 vagas</option>
+                    </select>
+                  </label>
+
+                  <label class="campo">
+                    <span>Ajuda de combustível</span>
+                    <div class="entrada-moeda">
+                      <b>R$</b>
+                      <input id="entradaValor" type="number" min="0" step="0.50" value="8.00">
+                    </div>
+                  </label>
+                </div>
+
+                <label class="campo">
+                  <span>Observação para passageiros <em>opcional</em></span>
+                  <textarea
+                    id="entradaObservacao"
+                    rows="3"
+                    placeholder="Ex.: posso esperar até 10 minutos; levo mochila no porta-malas."
+                  ></textarea>
+                </label>
+
+                <label class="interruptor">
+                  <input id="entradaConfirmacaoImediata" type="checkbox" checked>
+                  <span class="interruptor__visual"></span>
+                  <span>
+                    <strong>Confirmar solicitações automaticamente</strong>
+                    <small>Você poderá revisar isso a qualquer momento.</small>
+                  </span>
+                </label>
+
+                <button class="botao botao--primario botao--largo" type="submit">
+                  Publicar carona <span aria-hidden="true">→</span>
+                </button>
+              </form>
+
+              <aside class="painel-preview">
+                <p class="painel-preview__rotulo">PRÉ-VISUALIZAÇÃO <i></i></p>
+                <div id="previewPublicacao" class="preview-carona"></div>
+
+                <div class="aviso-seguranca">
+                  <span>✓</span>
+                  <p>
+                    <strong>Compartilhe com segurança.</strong>
+                    Combine detalhes pelo chat e utilize locais de embarque conhecidos.
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          
+          <section id="paginaMinhasCaronas" class="pagina" data-identificador-pagina="minhas-caronas">
+            <header class="cabecalho-pagina">
+              <div>
+                <p class="rotulo">SEUS TRAJETOS</p>
+                <h1>Minhas caronas</h1>
+                <p>Acompanhe suas reservas, ofertas e trajetos concluídos.</p>
+              </div>
+            </header>
+
+            <section class="resumo-caronas">
+              <div>
+                <span class="resumo-caronas__icone resumo-caronas__icone--azul">↗</span>
+                <p><strong>12</strong><small>caronas concluídas</small></p>
+              </div>
+
+              <i></i>
+
+              <div>
+                <span class="resumo-caronas__icone resumo-caronas__icone--verde">★</span>
+                <p><strong>4,9</strong><small>sua avaliação média</small></p>
+              </div>
+
+              <i></i>
+
+              <div>
+                <span class="resumo-caronas__icone resumo-caronas__icone--roxo">♻</span>
+                <p><strong>38 kg</strong><small>CO₂ evitados juntos</small></p>
+              </div>
+            </section>
+
+            <div class="abas" role="tablist" aria-label="Categorias de caronas">
+              <button class="aba aba--ativa" type="button" data-aba-caronas="proximas">Próximas <span>2</span></button>
+              <button class="aba" type="button" data-aba-caronas="oferecidas">Oferecidas <span>1</span></button>
+              <button class="aba" type="button" data-aba-caronas="historico">Histórico</button>
+            </div>
+
+            <div id="listaMinhasCaronas" class="lista-minhas-caronas"></div>
+          </section>
+
+          
+          <section
+            id="paginaAmigos"
+            class="pagina"
+            data-identificador-pagina="amigos"
+          >
+            <header class="cabecalho-pagina">
+              <div>
+                <p class="rotulo">SUA COMUNIDADE</p>
+                <h1>Amigos e rede</h1>
+                <p>
+                  Acompanhe quem cruza seus caminhos, compartilhe trajetos e
+                  transforme a carona em uma experiência mais social.
+                </p>
+              </div>
+
+              <button
+                id="botaoConvidarAmigos"
+                class="botao botao--primario botao--compacto"
+                type="button"
+              >
+                <span aria-hidden="true">＋</span>
+                Convidar amigos
+              </button>
+            </header>
+
+            <section class="cartao-conexao">
+              <div class="cartao-conexao__texto">
+                <span class="cartao-conexao__sinal">⌁</span>
+                <div>
+                  <p class="rotulo">CONEXÕES INTELIGENTES</p>
+                  <h2>Encontre colegas no mesmo caminho.</h2>
+                  <p>
+                    A rede prioriza amigos e pessoas da sua instituição para
+                    tornar cada trajeto mais familiar, seguro e confiável.
+                  </p>
+                </div>
+              </div>
+
+              <div class="cartao-conexao__orbita" aria-hidden="true">
+                <span class="cartao-conexao__linha"></span>
+                <span class="avatar avatar--azul">DV</span>
+                <span class="avatar avatar--laranja">LM</span>
+                <span class="avatar avatar--roxo">CS</span>
+                <span class="avatar avatar--verde">RB</span>
+              </div>
+            </section>
+
+            <div class="layout-rede">
+              <section class="cartao-atividade-rede">
+                <header class="cabecalho-secao">
+                  <div>
+                    <p class="rotulo">NO CAMINHO COM VOCÊ</p>
+                    <h2>Atividade da rede</h2>
+                  </div>
+
+                  <button class="botao-texto" type="button">
+                    Ver tudo <span>→</span>
+                  </button>
+                </header>
+
+                <div id="listaAtividadesAmigos" class="lista-atividade-rede"></div>
+              </section>
+
+              <aside class="cartao-amigos">
+                <header>
+                  <div>
+                    <p class="rotulo">PESSOAS PRÓXIMAS</p>
+                    <h2>Amigos disponíveis</h2>
+                  </div>
+
+                  <span class="sinal-online">3 online</span>
+                </header>
+
+                <div id="listaAmigos" class="lista-amigos"></div>
+
+                <button
+                  id="botaoEncontrarAmigos"
+                  class="botao botao--suave botao--largo"
+                  type="button"
+                >
+                  Encontrar colegas
+                </button>
+              </aside>
+            </div>
+          </section>
+
+          
+          <section id="paginaPerfil" class="pagina" data-identificador-pagina="perfil">
+            <header class="cabecalho-pagina">
+              <div>
+                <p class="rotulo">SEU ESPAÇO</p>
+                <h1>Meu perfil</h1>
+                <p>Suas informações, preferências e reputação na comunidade.</p>
+              </div>
+
+              <button class="botao botao--suave" type="button" data-acao="editar-perfil">
+                Editar perfil
+              </button>
+            </header>
+
+            <div class="layout-perfil">
+              <section class="cartao-perfil">
+                <div class="cartao-perfil__capa"></div>
+
+                <div class="cartao-perfil__corpo">
+                  <div class="avatar-perfil-wrapper">
+                    <span class="avatar-perfil">DV</span>
+                    <i></i>
+                  </div>
+
+                  <button class="botao-mais" type="button" aria-label="Mais opções">•••</button>
+
+                  <h2>Davi Vidal</h2>
+                  <p>Estudante de Tecnologia da Informação</p>
+                  <span class="selo-verificado">✓ Perfil verificado</span>
+
+                  <div class="metricas-perfil">
+                    <div>
+                      <strong>4,9 <span>★</span></strong>
+                      <small>avaliação média</small>
+                    </div>
+
+                    <div>
+                      <strong>12</strong>
+                      <small>caronas concluídas</small>
+                    </div>
+
+                    <div>
+                      <strong>Mar 2026</strong>
+                      <small>na comunidade</small>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="coluna-perfil">
+                <section class="cartao-informacoes">
+                  <header>
+                    <div>
+                      <p class="rotulo">SOBRE VOCÊ</p>
+                      <h2>Informações pessoais</h2>
+                    </div>
+
+                    <button class="botao-texto" type="button">Editar</button>
+                  </header>
+
+                  <div class="lista-informacoes">
+                    <div>
+                      <span>@</span>
+                      <p>
+                        <small>E-MAIL ACADÊMICO</small>
+                        <strong>davi.vidal@universidade.edu.br</strong>
+                      </p>
+                    </div>
+
+                    <div>
+                      <span>⌂</span>
+                      <p>
+                        <small>UNIVERSIDADE</small>
+                        <strong>Universidade de Brasília</strong>
+                      </p>
+                    </div>
+
+                    <div>
+                      <span>◷</span>
+                      <p>
+                        <small>ROTINA MAIS FREQUENTE</small>
+                        <strong>Asa Norte → Campus Universitário</strong>
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="cartao-informacoes">
+                  <header>
+                    <div>
+                      <p class="rotulo">PREFERÊNCIAS</p>
+                      <h2>Como você prefere viajar</h2>
+                    </div>
+
+                    <button class="botao-texto" type="button">Editar</button>
+                  </header>
+
+                  <div class="pills-preferencia">
+                    <span>Conversa moderada</span>
+                    <span>Sem cigarro</span>
+                    <span>Ar-condicionado</span>
+                    <span>Música baixa</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <section class="cartao-identidade-digital">
+              <div class="cartao-identidade-digital__cabecalho">
+                <div>
+                  <p class="rotulo">IDENTIDADE NA COMUNIDADE</p>
+                  <h2>Instituição, curso e conexões</h2>
+                </div>
+
+                <button
+                  class="botao-texto"
+                  type="button"
+                  data-acao="editar-perfil"
+                >
+                  Personalizar
+                </button>
+              </div>
+
+              <div class="grade-identidade-digital">
+                <article class="instituicao-digital">
+                  <span class="instituicao-digital__selo">UnB</span>
+
+                  <div>
+                    <small>INSTITUIÇÃO DE ENSINO</small>
+                    <strong>Universidade de Brasília</strong>
+                    <p>Tecnologia da Informação · 6º semestre</p>
+                  </div>
+
+                  <span class="instituicao-digital__verificado">✓</span>
+                </article>
+
+                <article class="perfil-social">
+                  <div class="perfil-social__icone perfil-social__icone--instagram">◎</div>
+                  <div>
+                    <small>PERFIL SOCIAL</small>
+                    <strong>@davi_no_caminho</strong>
+                    <p>Conexão opcional · visível para amigos</p>
+                  </div>
+                  <button class="botao-texto" type="button">Abrir</button>
+                </article>
+
+                <article class="perfil-social">
+                  <div class="perfil-social__icone perfil-social__icone--link">↗</div>
+                  <div>
+                    <small>LINK PROFISSIONAL</small>
+                    <strong>Portfólio acadêmico</strong>
+                    <p>Projetos, experiências e interesses</p>
+                  </div>
+                  <button class="botao-texto" type="button">Abrir</button>
+                </article>
+              </div>
+            </section>
+
+            <section class="cartao-avaliacoes">
+              <header class="cabecalho-secao">
+                <div>
+                  <p class="rotulo">AVALIAÇÕES DA COMUNIDADE</p>
+                  <h2>O que dizem sobre você</h2>
+                </div>
+
+                <button class="botao-texto" type="button">Ver todas <span>→</span></button>
+              </header>
+
+              <div class="grade-avaliacoes">
+                <article class="avaliacao">
+                  <span class="avatar avatar--roxo">CS</span>
+                  <div>
+                    <div class="avaliacao__cabecalho">
+                      <strong>Camila Souza</strong>
+                      <span>★★★★★</span>
+                    </div>
+                    <p>“Super pontual e muito gentil. A carona foi tranquila e segura.”</p>
+                    <small>Há 4 dias</small>
+                  </div>
+                </article>
+
+                <article class="avaliacao">
+                  <span class="avatar avatar--verde">RB</span>
+                  <div>
+                    <div class="avaliacao__cabecalho">
+                      <strong>Rafael Barbosa</strong>
+                      <span>★★★★★</span>
+                    </div>
+                    <p>“Ótima comunicação e trajeto muito bem combinado.”</p>
+                    <small>Há 2 semanas</small>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </section>
+
+          
+          <section id="paginaDetalhes" class="pagina" data-identificador-pagina="detalhes">
+            <button class="link-voltar" type="button" data-pagina="explorar">
+              <span aria-hidden="true">←</span>
+              Voltar para caronas
+            </button>
+
+            <div id="conteudoDetalhes"></div>
+          </section>
+        </div>
+      </main>
+    </section>
+
+    
+    <div id="modalNotificacoes" class="fundo-modal" aria-hidden="true">
+      <section class="modal-notificacoes" role="dialog" aria-modal="true" aria-label="Notificações">
+        <header>
+          <div>
+            <p class="rotulo">MANTENHA-SE ATUALIZADO(A)</p>
+            <h2>Notificações</h2>
+          </div>
+
+          <button
+            class="botao-icone"
+            type="button"
+            data-acao="fechar-notificacoes"
+            aria-label="Fechar notificações"
+          >
+            ×
+          </button>
+        </header>
+
+        <div class="lista-notificacoes">
+          <article>
+            <span class="icone-notificacao icone-notificacao--confirmacao">✓</span>
+            <div>
+              <strong>Sua carona foi confirmada</strong>
+              <p>Lucas Mendes confirmou sua vaga para hoje às 18:15.</p>
+              <small>Agora</small>
+            </div>
+            <i></i>
+          </article>
+
+          <article>
+            <span class="icone-notificacao icone-notificacao--mensagem">✦</span>
+            <div>
+              <strong>Nova mensagem de Camila</strong>
+              <p>“Oi! Podemos nos encontrar perto da entrada principal?”</p>
+              <small>Há 20 min</small>
+            </div>
+            <i></i>
+          </article>
+
+          <article>
+            <span class="icone-notificacao icone-notificacao--lembrete">◷</span>
+            <div>
+              <strong>Lembrete da sua oferta</strong>
+              <p>Sua carona para o Campus começa em 1 hora.</p>
+              <small>Há 1 h</small>
+            </div>
+          </article>
+        </div>
+
+        <button class="botao-texto modal-notificacoes__rodape" type="button">
+          Marcar todas como lidas
+        </button>
+      </section>
+    </div>
+
+    
+    <aside id="atalhosExperiencia" class="atalhos-experiencia" aria-label="Recursos da demonstração">
+      <button
+        id="botaoModoPiloto"
+        class="atalho-experiencia"
+        type="button"
+        title="Abrir modo piloto"
+      >
+        <span class="atalho-experiencia__icone">✦</span>
+        <span>Modo piloto</span>
+      </button>
+
+      <button
+        id="botaoConquistas"
+        class="atalho-experiencia atalho-experiencia--icone"
+        type="button"
+        title="Ver conquistas"
+        aria-label="Ver conquistas"
+      >
+        <span class="atalho-experiencia__icone">🏆</span>
+        <b id="contadorConquistas">1</b>
+      </button>
+    </aside>
+
+    
+    <div id="transicaoRota" class="transicao-rota" aria-hidden="true">
+      <div class="transicao-rota__diagonal transicao-rota__diagonal--1"></div>
+      <div class="transicao-rota__diagonal transicao-rota__diagonal--2"></div>
+      <div class="transicao-rota__diagonal transicao-rota__diagonal--3"></div>
+      <div class="transicao-rota__brilho"></div>
+
+      <div class="transicao-rota__portal" aria-hidden="true">
+        <div class="transicao-rota__portal-luz"></div>
+        <div class="transicao-rota__estrada">
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="transicao-rota__carro">🚙</div>
+      </div>
+    </div>
+
+    
+    <section id="camadaPiloto" class="camada-piloto" aria-hidden="true">
+      <div class="camada-piloto__cortina camada-piloto__cortina--superior"></div>
+      <div class="camada-piloto__cortina camada-piloto__cortina--inferior"></div>
+      <div class="camada-piloto__cortina camada-piloto__cortina--esquerda"></div>
+      <div class="camada-piloto__cortina camada-piloto__cortina--direita"></div>
+
+      <div id="destaquePiloto" class="destaque-piloto" aria-hidden="true">
+        <span class="destaque-piloto__pulso"></span>
+      </div>
+
+      <section class="painel-piloto" role="dialog" aria-modal="true" aria-label="Modo piloto">
+        <div class="mascote-piloto" aria-hidden="true">
+          <span class="mascote-piloto__antena"></span>
+          <span class="mascote-piloto__teto"></span>
+          <span class="mascote-piloto__olho mascote-piloto__olho--esquerdo"></span>
+          <span class="mascote-piloto__olho mascote-piloto__olho--direito"></span>
+          <span class="mascote-piloto__sorriso"></span>
+          <i class="mascote-piloto__roda mascote-piloto__roda--esquerda"></i>
+          <i class="mascote-piloto__roda mascote-piloto__roda--direita"></i>
+        </div>
+
+        <div class="painel-piloto__conteudo">
+          <div class="painel-piloto__cabecalho">
+            <p id="rotuloPiloto" class="rotulo">MODO PILOTO</p>
+
+            <button
+              id="botaoFecharPiloto"
+              class="botao-icone"
+              type="button"
+              aria-label="Fechar modo piloto"
+              title="Fechar modo piloto"
+            >
+              ×
+            </button>
+          </div>
+
+          <h2 id="tituloPiloto">Bem-vindo ao UniCarona</h2>
+          <p id="textoPiloto"></p>
+
+          <div class="painel-piloto__rodape">
+            <span id="progressoPiloto">1 de 2</span>
+
+            <div>
+              <button
+                id="botaoPilotoAnterior"
+                class="botao-texto"
+                type="button"
+                hidden
+                aria-hidden="true"
+                hidden
+                aria-hidden="true"
+              >
+                Voltar
+              </button>
+
+              <button
+                id="botaoPilotoProximo"
+                class="botao botao--primario botao-piloto-proximo"
+                type="button"
+              >
+                Próximo
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    
+    <div id="modalConquistas" class="fundo-modal fundo-modal--centralizado" aria-hidden="true">
+      <section class="modal-conquistas" role="dialog" aria-modal="true" aria-label="Conquistas">
+        <header class="modal-conquistas__cabecalho">
+          <div>
+            <p class="rotulo">SEU PROGRESSO NA JORNADA</p>
+            <h2>Conquistas</h2>
+            <p id="resumoConquistas">1 de 5 marcos desbloqueados</p>
+          </div>
+
+          <button
+            id="botaoFecharConquistas"
+            class="botao-icone"
+            type="button"
+            aria-label="Fechar conquistas"
+          >
+            ×
+          </button>
+        </header>
+
+        <section class="painel-ranques" aria-label="Jornada de ranques">
+          <div class="painel-ranques__cabecalho">
+            <div>
+              <p class="rotulo">RANK ATUAL</p>
+              <h3 id="tituloRankAtual">Ferro</h3>
+            </div>
+
+            <div class="painel-ranques__progresso">
+              <span id="progressoRankAtual"></span>
+            </div>
+
+            <small id="textoProgressoRank">1 de 3 marcos para Bronze</small>
+          </div>
+
+          <div class="trilha-ranques" aria-label="Ferro, Bronze, Prata, Ouro, Platina e Diamante">
+            <span data-ranque="ferro">Fe</span>
+            <i></i>
+            <span data-ranque="bronze">Br</span>
+            <i></i>
+            <span data-ranque="prata">Ag</span>
+            <i></i>
+            <span data-ranque="ouro">Au</span>
+            <i></i>
+            <span data-ranque="platina">Pt</span>
+            <i></i>
+            <span data-ranque="diamante">♦</span>
+          </div>
+        </section>
+
+        <div class="filtros-conquistas" role="tablist" aria-label="Filtros de conquistas">
+          <button class="filtro-conquista filtro-conquista--ativo" type="button" data-filtro-conquista="todas">
+            Todas
+          </button>
+          <button class="filtro-conquista" type="button" data-filtro-conquista="desbloqueadas">
+            Desbloqueadas
+          </button>
+          <button class="filtro-conquista" type="button" data-filtro-conquista="proximas">
+            Próximas
+          </button>
+        </div>
+
+        <div id="listaConquistas" class="lista-conquistas"></div>
+      </section>
+    </div>
+
+    
+    <section
+      id="apresentacaoCinematografica"
+      class="apresentacao-cinematografica"
+      aria-hidden="true"
+    >
+      <div class="apresentacao-cinematografica__ceu">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="vinheta-cinematografica" aria-hidden="true"></div>
+      <div class="cortina-cinema cortina-cinema--esquerda" aria-hidden="true"></div>
+      <div class="cortina-cinema cortina-cinema--direita" aria-hidden="true"></div>
+
+      <div id="preludioApresentacao" class="preludio-apresentacao">
+        <div class="preludio-apresentacao__marca">
+          <div class="simbolo-marca simbolo-marca--preludio"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+        </div>
+
+        <p>APRESENTA</p>
+        <h2>Uni<span>Carona</span></h2>
+        <small>Uma nova forma de chegar junto.</small>
+      </div>
+
+      <header class="apresentacao-cinematografica__cabecalho">
+        <div class="marca marca--clara">
+          <div class="simbolo-marca"><img src="/assets/logo-icon.png" alt="" aria-hidden="true"></div>
+
+          <strong>Uni<span>Carona</span></strong>
+        </div>
+
+        <div class="apresentacao-cinematografica__acoes">
+          <button
+            id="botaoSomApresentacao"
+            class="botao-som"
+            type="button"
+            aria-label="Desativar trilha sonora"
+            title="Trilha sonora ligada"
+          >
+            ♫
+          </button>
+
+          <button
+            id="botaoPularApresentacao"
+            class="botao-pular-apresentacao"
+            type="button"
+          >
+            Pular e explorar
+          </button>
+        </div>
+      </header>
+
+      <div class="apresentacao-cinematografica__palco">
+        <div class="efeitos-palco" aria-hidden="true">
+          <span class="efeitos-palco__feixe efeitos-palco__feixe--1"></span>
+          <span class="efeitos-palco__feixe efeitos-palco__feixe--2"></span>
+          <span class="efeitos-palco__particula efeitos-palco__particula--1"></span>
+          <span class="efeitos-palco__particula efeitos-palco__particula--2"></span>
+          <span class="efeitos-palco__particula efeitos-palco__particula--3"></span>
+        </div>
+
+        <div class="mascote-nico" aria-hidden="true">
+          <span class="mascote-nico__braco mascote-nico__braco--esquerdo"></span>
+          <span class="mascote-nico__braco mascote-nico__braco--direito"></span>
+          <span class="mascote-nico__farol mascote-nico__farol--esquerdo"></span>
+          <span class="mascote-nico__farol mascote-nico__farol--direito"></span>
+          <span class="mascote-nico__antena"></span>
+          <span class="mascote-nico__teto"></span>
+          <span class="mascote-nico__olho mascote-nico__olho--esquerdo"></span>
+          <span class="mascote-nico__olho mascote-nico__olho--direito"></span>
+          <span class="mascote-nico__sorriso"></span>
+          <i class="mascote-nico__roda mascote-nico__roda--esquerda"></i>
+          <i class="mascote-nico__roda mascote-nico__roda--direita"></i>
+        </div>
+
+        <div class="fala-mascote">
+          <span>Nico, seu copiloto</span>
+          <p id="falaApresentacao"></p>
+        </div>
+
+        <article class="cena-apresentacao cena-apresentacao--ativa" data-cena-apresentacao="0">
+          <div class="cena-apresentacao__texto">
+            <p class="rotulo rotulo--claro">CENA 01 · O COMEÇO</p>
+            <h1>Todo campus se move.<br><span>Chegou a hora de ir junto.</span></h1>
+            <p>
+              UniCarona aproxima estudantes que fazem caminhos parecidos
+              todos os dias.
+            </p>
+          </div>
+
+          <div class="visual-cena visual-cena--rotas" aria-hidden="true">
+            <div class="visual-cena__orbita visual-cena__orbita--1"></div>
+            <div class="visual-cena__orbita visual-cena__orbita--2"></div>
+            <span class="visual-cena__ponto visual-cena__ponto--1"></span>
+            <span class="visual-cena__ponto visual-cena__ponto--2"></span>
+            <span class="visual-cena__ponto visual-cena__ponto--3"></span>
+            <div class="visual-cena__carro">🚙</div>
+          </div>
+        </article>
+
+        <article class="cena-apresentacao" data-cena-apresentacao="1">
+          <div class="cena-apresentacao__texto">
+            <p class="rotulo rotulo--claro">CENA 02 · A ESCOLHA</p>
+            <h1>Uma rota.<br><span>Várias possibilidades.</span></h1>
+            <p>
+              Em poucos toques, o estudante encontra quem vai no mesmo
+              sentido e escolhe o melhor momento para embarcar.
+            </p>
+          </div>
+
+          <div class="visual-cena visual-cena--cartoes" aria-hidden="true">
+            <div class="cartao-cinematico cartao-cinematico--1">
+              <span class="avatar avatar--laranja">LM</span>
+              <div><strong>Lucas</strong><small>18:15 · 2 vagas</small></div>
+              <b>★ 4,9</b>
+            </div>
+            <div class="cartao-cinematico cartao-cinematico--2">
+              <span class="avatar avatar--roxo">CS</span>
+              <div><strong>Camila</strong><small>17:40 · 1 vaga</small></div>
+              <b>★ 5,0</b>
+            </div>
+            <div class="rota-luminosa"></div>
+          </div>
+        </article>
+
+        <article class="cena-apresentacao" data-cena-apresentacao="2">
+          <div class="cena-apresentacao__texto">
+            <p class="rotulo rotulo--claro">CENA 03 · O IMPACTO</p>
+            <h1>Compartilhar o caminho<br><span>muda a jornada de todos.</span></h1>
+            <p>
+              Menos carros vazios, mais economia, mais segurança e uma
+              comunidade universitária verdadeiramente conectada.
+            </p>
+          </div>
+
+          <div class="visual-cena visual-cena--impacto" aria-hidden="true">
+            <div class="painel-impacto-cinematico">
+              <span>♻</span>
+              <small>IMPACTO COLETIVO</small>
+              <strong>38 kg</strong>
+              <p>de CO₂ evitados juntos</p>
+            </div>
+            <div class="anel-impacto"></div>
+          </div>
+        </article>
+
+        <article class="cena-apresentacao" data-cena-apresentacao="3">
+          <div class="cena-apresentacao__texto">
+            <p class="rotulo rotulo--claro">CENA 04 · O DESTINO</p>
+            <h1>Seu caminho começa<br><span>agora.</span></h1>
+            <p>
+              Uma solução simples para uma ideia poderosa: ninguém precisa
+              fazer a jornada sozinho.
+            </p>
+
+            <button
+              id="botaoEntrarDemonstracaoApresentacao"
+              class="botao botao--primario"
+              type="button"
+            >
+              Entrar na demonstração
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <div class="visual-cena visual-cena--final" aria-hidden="true">
+            <div class="portal-destino">
+              <div class="portal-destino__luz"></div>
+              <div class="portal-destino__carro">🚙</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <footer class="apresentacao-cinematografica__rodape">
+        <button
+          id="botaoCenaAnterior"
+          class="botao-cena botao-cena--anterior"
+          type="button"
+          aria-label="Cena anterior"
+        >
+          ←
+        </button>
+
+        <div id="progressoApresentacao" class="progresso-apresentacao" aria-label="Progresso da apresentação">
+          <span class="progresso-apresentacao__ativo"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <button
+          id="botaoProximaCena"
+          class="botao-cena"
+          type="button"
+          aria-label="Próxima cena"
+        >
+          →
+        </button>
+      </footer>
+    </section>
+
+        <div id="areaToasts" class="area-toasts" aria-live="polite"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
