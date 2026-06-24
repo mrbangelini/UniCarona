@@ -1,0 +1,28 @@
+{
+  "name": "unicarona-local",
+  "version": "1.0.0",
+  "description": "Protótipo local do UniCarona com login e banco SQLite.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "reset-db": "node src/reset-db.js"
+  },
+  "keywords": [
+    "unicarona",
+    "caronas",
+    "prototipo",
+    "node",
+    "sqlite"
+  ],
+  "author": "Equipe UniCarona",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
