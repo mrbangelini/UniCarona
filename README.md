@@ -155,16 +155,6 @@ unicarona-local/
 └─ README.md
 ```
 
-## Documentação de entrega acadêmica
-
-A pasta `docs/` concentra os artefatos de entrega do projeto:
-
-- `ANALISE_BACKEND.md`: explica o que existia antes e o que foi implementado no back-end local.
-- `AZURE_SPRINTS_BACKLOG.md`: registra a organização resumida das sprints.
-- `BACKLOG_AZURE_VERSIONADO.md`: apresenta o backlog dividido por sprints, épicos, features, PBIs e tasks.
-- `Contrato_Time_UniCarona_Corrigido.docx`: contrato de time ágil preenchido.
-- `Contrato_Time_UniCarona_Corrigido.pdf`: versão em PDF do contrato de time ágil preenchido.
-
 ## Próximos passos técnicos
 
 - Criar tela real de cadastro de usuário.
